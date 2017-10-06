@@ -1,5 +1,5 @@
-// Constructor template for UTC1:
-//     new UTC1(h, m)
+// Constructor template for UTCClass:
+//     new UTCClass(h, m)
 // Interpretation:
 //     h and m are the hours and minutes corresponding to a UTC
 //     (an Object of Universal Coordinated Time)

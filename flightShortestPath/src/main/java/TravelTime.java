@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-// Time provides helper functions for time calculation.
+// TravelTime provides helper functions for time calculation.
 
 public class TravelTime {
 

@@ -1,4 +1,4 @@
-// UTCs provides a static factory method that can be used to create a
+// UTCFactory provides a static factory method that can be used to create a
 //     new instance of UTC
 
 public class UTCFactory {

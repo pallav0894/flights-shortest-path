@@ -1,6 +1,6 @@
 import java.util.*;
 
-// Schedules implements three primary functions: canGetThere(),
+// PathFinder implements three primary functions: canGetThere(),
 //     fastestItinerary(), and travelTime.
 
 public class PathFinder {
@@ -95,7 +95,7 @@ public class PathFinder {
         HashMap<Integer,PathTime> finalMap;
 
         if ((flights.isEmpty())||(ap1.equals(ap2))) {
-            return new ArrayList<Flight>();
+            return FlightSamples.emptyList;
         }
         else {
             finalMap = initialize(flights, ap1, ap2);

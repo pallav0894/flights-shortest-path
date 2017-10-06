@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-// A GetValue is an object of any class that implements GetValue.
+// A PathTime is an object of any class that implements GetValue.
 //
 // Interpretation: A GetValue represents a collection of values which
 // records a path and time from a particular source that

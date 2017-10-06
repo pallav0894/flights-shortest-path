@@ -1,4 +1,4 @@
-// Flights provides a static factory method that can be used to create a
+// FlightFactory provides a static factory method that can be used to create a
 //     new instance of Flight
 
 public class FlightFactory {

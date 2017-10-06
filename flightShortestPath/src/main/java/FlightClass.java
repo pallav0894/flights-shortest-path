@@ -1,5 +1,5 @@
-// Constructor template for Flight1:
-//     new Flight1(name, ap1, ap2, t1, t2)
+// Constructor template for FlightClass:
+//     new FlightClass(name, ap1, ap2, t1, t2)
 // Interpretation:
 // name is the name of the flight
 // ap1 and ap2 are the src and dest respectively

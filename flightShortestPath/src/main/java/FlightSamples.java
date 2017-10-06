@@ -1,19 +1,19 @@
+import sun.nio.ch.FileKey;
+
 import java.util.ArrayList;
 
-/**
- * Defines some examples for testing and makes them available as
- * public members of the class.
- */
+
+// Defines some examples for testing and makes them available as
+// public members of the class.
+
 
 public class FlightSamples {
 
-    public static ArrayList<Flight> panAmFlights = null;
+    public static ArrayList<Flight> emptyList = new ArrayList<Flight>();
 
     public static ArrayList<Flight> deltaFlights = initDeltaFlights();
 
     public static ArrayList<Flight> deltaCycle = initDeltaCycle();
-
-//    public static ArrayList<Flight> deltaFlights1 = initDeltaFlights1();
 
     // GIVEN: the name of a flight, the airports of departure and
     //     arrival, and the departure and arrival times represented
@@ -111,4 +111,34 @@ public class FlightSamples {
 
         return initDeltaCycle;
     }
+
+    public static Boolean listEquals(ArrayList<Flight> lst1, ArrayList<Flight> lst2){
+        int n = lst1.size();
+        int m = lst2.size();
+
+        if (n != m) {
+            return false;
+        }
+
+        int flag = 0;
+
+        for (int i=0; i<n; i++){
+            if (lst1.get(i).name().equals(lst2.get(i).name()) &&
+                    lst1.get(i).departs().equals(lst2.get(i).departs()) &&
+                    lst1.get(i).arrives().equals(lst2.get(i).arrives()) &&
+                    lst1.get(i).departsAt().isEqual(lst2.get(i).departsAt()) &&
+                    lst1.get(i).arrivesAt().isEqual(lst2.get(i).arrivesAt())){
+                flag = 1;
+            }
+            else{
+                flag = 0;
+            }
+        }
+        if (flag == 1) {
+            return true;
+        }
+        else return false;
+    }
+
+
 }

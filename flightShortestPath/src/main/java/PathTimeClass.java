@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
-// Constructor template for GetValues1:
-//     new GetValues1(x, y)
+// Constructor template for PathTimeClass:
+//     new PathTimeClass(x, y)
 // Interpretation:
 //     x is the path to a destination from a given source
 //     y is the time elapsed for traversing the path in x
